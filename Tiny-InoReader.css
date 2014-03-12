@@ -34,6 +34,13 @@
 
 
     /******************* Content Area - Start *****************/
+    /* (list view) reduce padding of info panel */
+    #reader_pane.reader_pane_view_style_0 > #consent_https_info
+    {
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+    }
+
     /* (list view) add space between article headers */
     #reader_pane.reader_pane_view_style_0 > div.ar
     {
@@ -48,16 +55,34 @@
         padding-bottom: 6px !important;
     }
 
+    /* (list view) adjust margin of article header's favicon */
+    #reader_pane.reader_pane_view_style_0 > div.ar div.article_header >div.article_favicon
+    {
+        margin-top: 2px !important;
+        margin-right: 5px !important;
+    }
+
+    /* (list view) adjust margin of article header's arrow div */
+    #reader_pane.reader_pane_view_style_0 > div.ar div.article_header >div.arrow_div
+    {
+        top: 1px !important;
+    }
+
+    /* (list view) add hover highlight to article headers */
+    #reader_pane.reader_pane_view_style_0 > div.ar:not(.article_expanded):hover,
+    #reader_pane.reader_pane_view_style_0 > div.ar.article_expanded  > div.article_header:hover
+    {
+        box-shadow: 0 0 2px 2px #2E9AFE !important;
+    }
 
 
-
-
-
-
-
-
-
-
+    /*2、方块View
+    未读、未选中ar         ar_showed article_tile radius article
+    未读、选中  ar         ar_showed article_tile radius article article_current
+    闭合、未读 ar          ar_showed article_tile radius article_expanded article_unreaded
+    闭合、已读 ar article  ar_showed article_tile radius
+               ar          ar_showed article_tile radius article
+    */
 
 
     /* (tile view) reduce margin-top of article tiles */
@@ -109,53 +134,4 @@
         color: #554FCA !important;
     }
     /******************** Content Area - End ******************/
-
-
-
-
-
-
-
-1、列表：
-闭合、未读 ar          article_current article_current_collapsed article_unreaded
-闭合、已读 ar article  article_current article_current_collapsed
-
-展开、未读 ar          article_current article_expanded ar_showed article_unreaded
-展开、已读 ar article  article_current article_expanded ar_showed
-
-
-2、方块
-
-未读、未选中ar         ar_showed article_tile radius article
-未读、选中  ar         ar_showed article_tile radius article article_current
-闭合、未读 ar          ar_showed article_tile radius article_expanded article_unreaded
-闭合、已读 ar article  ar_showed article_tile radius
-           ar          ar_showed article_tile radius article
-
-
-
-    /* Feed 高亮 */
-    .ar:not(.article_expanded):not(.article_card):hover,
-    .ar:not(.article_card).article_expanded > .article_header:hover
-    {
-        box-shadow: 0px 0px 1mm 1px #2E9AFE !important;
-    }
-
-    /* Feed 正文标题栏高亮 */
-    .ar.article_expanded:not(.article_card) > .article_stripe.article_stripe_read+.article_header
-    {
-        background-color: #F0F0F0 !important;
-    }
-
-    /* 闭合状态、已读 Feed 高亮 */
-    .ar:not(.article_unreaded):not(.article_expanded):not(:hover)
-    {
-        background-color: #F0F0F0 !important;
-    }
-
-    /* 闭合状态、已读、当前选中 Feed 高亮 */
-    .ar.article_current_collapsed:not(.article_unreaded):not(:hover)
-    {
-        background-color: #FFE8C4 !important;
-    }
 }
