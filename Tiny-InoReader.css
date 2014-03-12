@@ -1,0 +1,99 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document domain("inoreader.com")
+{
+    /* 隐藏 InoReader Logo */
+    #subscriptions_nav > div:first-child
+    {
+        display: none !important;
+    }
+
+    /* 未读条目 */
+    span.unread_cnt
+    {
+        color: #D24231 !important;
+    }
+
+    /* 隐藏 上/下 按钮 */
+    #notifications_div + div > button:nth-of-type(-n+2)
+    {
+        visibility: hidden !important;
+    }
+
+    /* 导航栏选中项加粗 */
+    .tree_node.selected,
+    .tree_sub_node.selected
+    {
+        font-weight: bold !important;
+    }
+
+    /* 订阅源底部增加内间距 */
+    #tree
+    {
+        padding-bottom: 1in !important;
+    }
+
+    /* Feed 正文标题栏链接 */
+    a.article_title_link.bluelink:hover
+    {
+        text-decoration: underline !important;
+    }
+
+    /* Feed 正文标题栏、内部链接 */
+    a.article_title_link.bluelink:visited,
+    .article_content a:visited
+    {
+        color: #554FCA !important;
+    }
+
+    /* Feed 间距 */
+    .ar.article, .ar.article_unreaded
+    {
+        margin-top: 4px !important;
+        margin-bottom: 4px !important;
+    }
+
+    /* Feed 高亮 */
+    .ar:not(.article_expanded):not(.article_card):hover,
+    .ar:not(.article_card).article_expanded > .article_header:hover
+    {
+        box-shadow: 0px 0px 1mm 1px #2E9AFE !important;
+    }
+
+    /* Feed 正文标题栏高亮 */
+    .ar.article_expanded:not(.article_card) > .article_stripe.article_stripe_read+.article_header
+    {
+        background-color: #F0F0F0 !important;
+    }
+
+    /* 闭合状态、已读 Feed 高亮 */
+    .ar:not(.article_unreaded):not(.article_expanded):not(:hover)
+    {
+        background-color: #F0F0F0 !important;
+    }
+
+    /* 闭合状态、已读、当前选中 Feed 高亮 */
+    .ar.article_current_collapsed:not(.article_unreaded):not(:hover)
+    {
+        background-color: #FFE8C4 !important;
+    }
+
+    /* 调整 Feed 高度 */
+    .article_header,
+    .article_header_text
+    {
+        line-height: 22pt;
+    }
+
+    /* 调整 Feed 内容高度 */
+    .article_header > div
+    {
+        vertical-align: bottom;
+    }
+
+    /* 调整 Feed 标题栏图标位置 */
+    .article_header > div:first-child > a > img,
+    .header_buttons img
+    {
+        vertical-align: text-bottom !important;
+    }
+}
