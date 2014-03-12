@@ -2,6 +2,8 @@
 
 Tiny InoReader is a simple customized style for [InoReader](https://www.inoreader.com) for those who are using [InoReader](https://www.inoreader.com) as RSS Reader.
 
+(Check [Beta Version](/tree/beta) for [Beta Version of InoReader](https://beta.inoreader.com).)
+
 #Installation
 
 **Precondition:** [Firefox](https://www.mozilla.org/en-US/firefox/new/) with [Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/) installed.
