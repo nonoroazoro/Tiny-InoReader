@@ -55,10 +55,9 @@
         padding-bottom: 6px !important;
     }
 
-    /* (list view) adjust margin of article header's favicon */
+    /* (list view) adjust margin-right of article header's favicon */
     #reader_pane.reader_pane_view_style_0 > div.ar div.article_header >div.article_favicon
     {
-        margin-top: 2px !important;
         margin-right: 5px !important;
     }
 
