@@ -129,10 +129,22 @@
         background-color: rgb(255, 249, 219) !important;
     }
 
+    /* (card view) increase the size of center dialog content and keep it staying in the center screen */
+    #article_dialog_wrapper
+    {
+        width: 75% !important;
+        height: 95% !important;
+
+        position: absolute;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
     /* (card view) reduce padding of dialog content */
     #article_dialog_wrapper > #article_dialog
     {
-        padding: 25px !important;
+        padding: 25px 0 !important;
     }
 
     /* remove padding-top from the article content area */
