@@ -12,6 +12,13 @@ Tiny InoReader is a simple customized style for [InoReader](https://www.inoreade
 
 #Changelog
 
+###<a href="#changelog-1.2" id="changelog-1.2">1.2</a>
+
+March 13th, 2014
+
+- Recode all of the styles.
+- Release for the latest version of InoReader.
+
 ###<a href="#changelog-1.1" id="changelog-1.1">1.1</a>
 
 October 22th, 2012
