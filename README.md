@@ -1,6 +1,8 @@
 #Tiny InoReader - for [Beta Version](https://beta.inoreader.com)
 
-Tiny InoReader is a simple customized style for [InoReader](https://www.inoreader.com) for those who are using [InoReader](https://www.inoreader.com) as RSS Reader.
+Tiny InoReader is a simple customized style for [InoReader](https://www.inoreader.com).
+
+Just for those who are using [InoReader](https://www.inoreader.com) as RSS Reader.
 
 #Installation
 
