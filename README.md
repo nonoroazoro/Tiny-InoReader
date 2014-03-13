@@ -18,17 +18,17 @@ Just for those who are using [InoReader](https://www.inoreader.com) as RSS Reade
 
 March 13th, 2014
 
-- Recode all of the styles.
-- Release for the latest version of InoReader.
+- recode all of the styles.
+- release for the latest version of InoReader.
 
 ###<a href="#changelog-1.1" id="changelog-1.1">1.1</a>
 
 October 22th, 2012
 
-- Adjust the space between each feed.
+- adjust the space between each feed.
 
 ###<a href="#changelog-1.0" id="changelog-1.0">1.0</a>
 
 March 5th, 2012
 
-- First release of Tiny InoReader.
+- first release of Tiny InoReader.
