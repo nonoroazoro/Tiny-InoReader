@@ -1,17 +1,16 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("inoreader.com")
 {
-    /********************* Top Bar - Start ********************/
+    /********************* top bar - start ********************/
     /* hide prev/next buttons */
-    #subscriptions_buttons #sb_rp_prev_article, #subscriptions_buttons #sb_rp_next_article
+    #subscriptions_buttons #sb_rp_prev_article,
+    #subscriptions_buttons #sb_rp_next_article
     {
         display: none !important;
     }
-    /********************* Top Bar - End **********************/
+    /********************* top bar - end **********************/
 
-
-
-    /************** Left Navigation Tree - Start **************/
+    /************** left navigation tree - start **************/
     /* reduce padding-top of the navigation tree */
     #tree_pane > #subscriptions_nav
     {
@@ -19,7 +18,8 @@
     }
 
     /* change unread count forecolor */
-    #tree_pane span.unread_cnt, #tree_pane span.icon-checkmark
+    #tree_pane span.unread_cnt,
+    #tree_pane span.icon-checkmark
     {
         color: #D24231 !important;
     }
@@ -29,19 +29,17 @@
     {
         padding-bottom: 30px !important;
     }
-    /*************** Left Navigation Tree - End ***************/
+    /*************** left navigation tree - end ***************/
 
-
-
-    /******************* Content Area - Start *****************/
-    /* (list view) reduce padding of info panel */
+    /******************* content area - start *****************/
+    /* (list view) reduce padding of consent https info panel */
     #reader_pane.reader_pane_view_style_0 > #consent_https_info
     {
         padding-top: 6px !important;
         padding-bottom: 6px !important;
     }
 
-    /* (list view) add space between article headers */
+    /* (list view) add margin between article headers */
     #reader_pane.reader_pane_view_style_0 > div.ar
     {
         margin-top: 2px !important;
@@ -58,7 +56,7 @@
     /* (list view) adjust margin-right of article header's favicon */
     #reader_pane.reader_pane_view_style_0 > div.ar div.article_header >div.article_favicon
     {
-        margin-right: 5px !important;
+        margin-right: 8px !important;
     }
 
     /* (list view) adjust margin of article header's arrow div */
@@ -74,20 +72,67 @@
         box-shadow: 0 0 2px 2px #2E9AFE !important;
     }
 
+    /* (column view) add margin between article headers */
+    #reader_pane.reader_pane_view_style_2 > div.ar
+    {
+        margin-top: 2px !important;
+        margin-bottom: 2px !important;
+    }
 
-    /*2、方块View
-    未读、未选中ar         ar_showed article_tile radius article
-    未读、选中  ar         ar_showed article_tile radius article article_current
-    闭合、未读 ar          ar_showed article_tile radius article_expanded article_unreaded
-    闭合、已读 ar article  ar_showed article_tile radius
-               ar          ar_showed article_tile radius article
-    */
+    /* (column view) reduce padding of article content */
+    #three_way_contents
+    {
+        padding: 0 5px !important;
+    }
 
+    /* (column view) reduce margin-left of article headers */
+    #reader_pane.reader_pane_view_style_2 > div.ar > div.article_header
+    {
+        margin-left: 8px !important;
+    }
 
-    /* (tile view) reduce margin-top of article tiles */
-    #reader_pane.reader_pane_view_style_3 > div.article_tile
+    /* (column view) adjust margin of article header's favicon */
+    #reader_pane.reader_pane_view_style_2 > div.ar > div.article_header div.article_favicon
+    {
+        margin-top: 8px !important;
+        margin-right: 8px !important;
+    }
+
+    /* (column view) add hover highlight to article headers */
+    #reader_pane.reader_pane_view_style_2 > div.ar:hover
+    {
+        box-shadow: 0 0 2px 2px #2E9AFE !important;
+    }
+
+    /* (column view) fix highlight color of selected article headers */
+    #reader_pane.reader_pane_view_style_2 > div.ar.article_current,
+    #reader_pane.reader_pane_view_style_2 > div.ar.article_current > div.article_header > div.arrow_div
+    {
+        background-color: rgb(255, 249, 219) !important;
+    }
+
+    /* (card view) reduce margin-top of article tiles */
+    #reader_pane.reader_pane_view_style_3 > div.ar
     {
         margin-top: 20px !important;
+    }
+
+    /* (card view) add hover highlight to article tiles */
+    #reader_pane.reader_pane_view_style_3 > div.ar:hover
+    {
+        box-shadow: 0 0 5px 2px #2E9AFE !important;
+    }
+
+    /* (card view) fix highlight color of selected article headers */
+    #reader_pane.reader_pane_view_style_3 > div.ar.article_current
+    {
+        background-color: rgb(255, 249, 219) !important;
+    }
+
+    /* (card view) reduce padding of dialog content */
+    #article_dialog_wrapper > #article_dialog
+    {
+        padding: 25px !important;
     }
 
     /* remove padding-top from the article content area */
@@ -109,16 +154,17 @@
         margin-top: 8px !important;
     }
 
-    /* reduce padding-bottom of the article content */
+    /* reduce padding of the article content */
     div.article_full_contents > div.article_content
     {
+        padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
 
     /* reduce margin-top of the article content */
     div.article_full_contents > div.article_content > p:first-child
     {
-        margin-top: 8px !important;
+        margin-top: 10px !important;
     }
 
     /* reduce margin-bottom of the article content */
@@ -132,5 +178,5 @@
     {
         color: #554FCA !important;
     }
-    /******************** Content Area - End ******************/
+    /******************** content area - end ******************/
 }
