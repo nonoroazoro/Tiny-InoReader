@@ -1,4 +1,4 @@
-#Tiny InoReader - for [Beta Version](https://beta.inoreader.com)
+#Tiny InoReader
 
 Tiny InoReader is a simple customized style for [InoReader](https://www.inoreader.com).
 
