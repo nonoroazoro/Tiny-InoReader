@@ -14,6 +14,12 @@ Just for those who are using [InoReader](https://www.inoreader.com) as RSS Reade
 
 #Changelog
 
+###<a href="#changelog-1.3" id="changelog-1.3">1.3</a>
+
+March 16th, 2014
+
+- adjust top padding of article content area.
+
 ###<a href="#changelog-1.2" id="changelog-1.2">1.2</a>
 
 March 13th, 2014
