@@ -147,10 +147,10 @@
         padding: 25px 0 !important;
     }
 
-    /* remove padding-top from the article content area */
+    /* adjust padding-top from the article content area */
     div.article_full_contents
     {
-        padding-top: 0 !important;
+        padding-top: 5px !important;
     }
 
     /* remove margin from the article title */
