@@ -1,4 +1,5 @@
-#Tiny InoReader
+Tiny InoReader
+===============
 
 Tiny InoReader is a simple customized style for [InoReader](https://www.inoreader.com).
 
