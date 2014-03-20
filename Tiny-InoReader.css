@@ -65,6 +65,13 @@
         top: 1px !important;
     }
 
+    /* (list view) adjust margin and padding of article headers */
+    #reader_pane.reader_pane_view_style_0 > div.ar.article_expanded  > div.article_header
+    {
+        margin-left: 2px !important;
+        padding-left: 8px !important;
+    }
+
     /* (list view) add hover highlight to article headers */
     #reader_pane.reader_pane_view_style_0 > div.ar:not(.article_expanded):hover,
     #reader_pane.reader_pane_view_style_0 > div.ar.article_expanded  > div.article_header:hover
