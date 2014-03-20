@@ -20,7 +20,7 @@ Just for those who are using [InoReader](https://www.inoreader.com) as RSS Reade
 March 20th, 2014
 
 - adjust highlight area of article headers.
-- delete styles of some elements.
+- modify styles of some elements.
 
 ###<a href="#changelog-1.3" id="changelog-1.3">1.3</a>
 
