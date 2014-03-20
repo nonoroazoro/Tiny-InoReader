@@ -180,6 +180,18 @@
         padding-bottom: 8px !important;
     }
 
+    /* remove margin-top of the first element of article content */
+    div.article_full_contents > div.article_content > p:first-child
+    {
+        margin-top: 0 !important;
+    }
+
+    /* remove margin-bottom of the last element of the article content */
+    div.article_full_contents > div.article_content > p:last-child
+    {
+        margin-bottom: 0 !important;
+    }
+
     /* change the forecolor of all visited links in article content area */
     div.article_full_contents > div.article_content a:visited
     {
