@@ -167,29 +167,17 @@
         margin-bottom: 0 !important;
     }
 
-    /* reduce margin-top of the article sub title */
+    /* adjust margin-top of the article sub title */
     div.article_full_contents > div.article_sub_title
     {
         margin-top: 8px !important;
     }
 
-    /* reduce padding of the article content */
+    /* adjust padding of the article content */
     div.article_full_contents > div.article_content
     {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
-
-    /* reduce margin-top of the article content */
-    div.article_full_contents > div.article_content > p:first-child
-    {
-        margin-top: 10px !important;
-    }
-
-    /* reduce margin-bottom of the article content */
-    div.article_full_contents > div.article_content > p:last-child
-    {
-        margin-bottom: 0 !important;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
     }
 
     /* change the forecolor of all visited links in article content area */
