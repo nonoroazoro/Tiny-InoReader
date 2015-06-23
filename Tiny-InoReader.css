@@ -3,8 +3,8 @@
 {
     /********************* top bar - start ********************/
     /* hide prev/next buttons */
-    #subscriptions_buttons #sb_rp_prev_article,
-    #subscriptions_buttons #sb_rp_next_article
+    #sb_rp_prev_article,
+    #sb_rp_next_article
     {
         display: none !important;
     }
