@@ -12,7 +12,7 @@
 
     /************** left navigation tree - start **************/
     /* reduce padding-top of the navigation tree */
-    #tree_pane > #subscriptions_nav
+    #subscriptions_nav
     {
         padding-top: 0 !important;
     }
@@ -32,6 +32,27 @@
     /*************** left navigation tree - end ***************/
 
     /******************* content area - start *****************/
+    /* block ad */
+    #sinner_container
+    {
+        display: none !important;
+    }
+
+    /* extend the width of content area  */
+    #reader_pane.reader_pane_sinner
+    {
+        padding-right: 0 !important;
+    }
+
+    /* center all read message */
+    #reader_pane #all_read_message
+    {
+        position: absolute;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
     /* (list view) reduce padding of consent https info panel */
     #reader_pane.reader_pane_view_style_0 > #consent_https_info
     {
