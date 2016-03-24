@@ -15,6 +15,13 @@ Just for those who are using [InoReader](https://www.inoreader.com) as RSS Reade
 
 #Changelog
 
+###<a href="#changelog-1.5" id="changelog-1.5">1.5</a>
+
+March 24th, 2016
+
+- block ad.
+- adjust read area.
+
 ###<a href="#changelog-1.4" id="changelog-1.4">1.4</a>
 
 March 20th, 2014
